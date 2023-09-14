@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label><input type="text" placeholder="nhập a" id="a"></label>
+    <label><input type="text" placeholder="nhập b" id="b"></label>
+    <button onclick="tinh()">Tính</button>
+    <p id="hienthi">Nghiệm phương trình là</p>
+<script>
+    function tinh() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = -b / a ;
+        if (a == 0){
+            document.getElementById("hienthi").innerHTML = "Phương trình vô nghiệm"
+
+        } else {
+            document.getElementById("hienthi").innerHTML = c ;
+            }
+
+    }
+</script>
+
+
+
+
+</body>
+</html>
