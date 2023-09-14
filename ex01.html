@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="cautraloi" placeholder="Nhập câu trả lời vao đây">
+<button onclick="ketqua()">Click</button>
+<p id="hienthi"></p>
+
+
+
+<script>
+    function ketqua() {
+        let a = document.getElementById("cautraloi").value;
+        if ( a == 'ECMAScript' ) {
+            document.getElementById("hienthi").innerHTML = "Right";
+        }
+        else {
+            document.getElementById("hienthi").innerHTML = "Didn't know? ECMAScript!";
+        }
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
